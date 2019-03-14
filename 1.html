@@ -1,0 +1,36 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			.test::after{
+				color: red;
+			}
+			@media only screen and (orientation:portrait) {
+				.test::after{
+					content: "竖屏";
+				}
+				body{
+					background-color: yellow;
+				}
+			}
+			@media only screen and (orientation:landscape ) {
+				.test::after{
+					content:"横屏";
+				}
+				body{
+					background: greenyellow;
+				}
+			}
+		</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		<div class="test">
+			您现在是：
+		</div>
+	</body>
+</html>
